@@ -1,22 +1,125 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Form PO Merch BEM Fasilkom UI</title>
-  </head>
-  <body>
-    <div class="container">
-      Hello
-    </div>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Form PO Merch BEM Fasilkom UI</title>
+</head>
 
+<body>
+  <header class="py-5 bg-dark text-center text-white mb-4">
+    <h1 class="container ">Pre-Order Merch BEM Fasilkom UI 2021 by BISMIT</h1>
+  </header>
+  <section class="container" style="max-width: 50ch;">
+    <form action="" id="form">
+      <h2 class="mb-4">Data Pemesanan</h2>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email UI*</label>
+        <input type="email" class="form-control" id="email" style="max-width: 50ch;" required
+          placeholder="someone@ui.ac.id">
+      </div>
+      <div class="mb-3">
+        <label for="buyer_name" class="form-label">Nama Lengkap*</label>
+        <input type="text" class="form-control" id="buyer_name" style="max-width: 50ch;" required
+          placeholder="Orang Keren">
+      </div>
+      <div class="mb-3">
+        <label for="id_line" class="form-label">ID Line*</label>
+        <input type="text" class="form-control" id="id_line" style="max-width: 30ch;" required placeholder="abc123">
+      </div>
+      <div class="mb-3" style="max-width: 30ch;">
+        <label for="division" class="form-label">Pilih Biro/Departemen*</label>
+        <select class="form-select" aria-label="Pilih Divisi" id="division" name="division" required>
+          <option disabled selected>Pilih Biro/Departemen</option>
+          <option value="pi">PI</option>
+          <option value="ki">KI</option>
+          <option value="adkesmaakpem">AdkesmaAkpem</option>
+          <option value="kastrat">Kastrat</option>
+          <option value="pengmas">Pengmas</option>
+          <option value="senbud">Senbud</option>
+          <option value="olahraga">Olahraga</option>
+          <option value="keilmuan">Keilmuan</option>
+          <option value="psdm">PSDM</option>
+          <option value="pti">PTI</option>
+          <option value="bismit">Bismit</option>
+          <option value="media">Media</option>
+          <option value="humas">Humas</option>
+        </select>
+        <h2 class="mt-5 mb-4">Data Pesanan</h2>
+        <img class="mb-3" src="./images/shirt-white.svg" alt="shirt-white">
+        <img class="mb-4" src="./images/shirt-black.svg" alt="shirt-black">
+        <label for="color" class="form-label">Pilih Warna</label>
+        <select class="form-select mb-3" aria-label="Pilih warna" id="color" name="color">
+          <option disabled selected>Pilih warna</option>
+          <option value="putih">Putih</option>
+          <option value="hitam">Hitam</option>
+        </select>
+        <img class="mb-4" src="./images/size.svg" alt="chart">
+        <label for="size" class="form-label">Pilih Ukuran</label>
+        <select class="form-select mb-3" aria-label="Pilih ukuran kaos" id="size" name="size">
+          <option disabled selected>Pilih ukuran</option>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+          <option value="xxxl">XXXL</option>
+        </select>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="long" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Lengan Panjang
+          </label>
+        </div>
+        <h2 class="mt-5">Data Penerima</h2>
+        <div class="mb-3">
+          <label for="receiver_name" class="form-label">Nama Penerima*</label>
+          <input type="text" class="form-control" id="receiver_name" style="max-width: 50ch;" required
+            placeholder="Orang Keren">
+        </div>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" name="same_name" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Sama dengan nama pemesan
+        </label>
+      </div>
+      <div class="mb-3">
+        <label for="telp" class="form-label">Nomor Telepon*</label>
+        <input type="tel" class="form-control" id="telp" style="max-width: 50ch;" required placeholder="08123456789">
+      </div>
+      <div class="mb-3">
+        <label for="province" class="form-label">Provinsi Penerima*</label>
+        <select name="Provinsi" id=""></select>
+      </div>
+      <Button id="submit-btn" class="btn btn-primary" type="submit">Submit</Button>
+    </form>
+  </section>
+  <footer class="p-3 text-center mt-5 bg-dark text-white">With ❤️ from Bismit</footer>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+<script>
+  $(document).ready(function () {
+    $.ajax({
+      method: 'GET',
+      url: 'https://api.rajaongkir.com/starter/province',
+      headers: { key: '0f695c84b24e02df3f63872b0be0e49b' }
+    }).then(e => console.log(e))
+  })
+
+</script>
+
 </html>
